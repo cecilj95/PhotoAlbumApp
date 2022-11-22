@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ProjectsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="PhotoAlbumDB">
+    <Key>
+      <PropertyRef Name="PhotoAlbum_ID" />
+    </Key>
+    <Property Name="PhotoAlbum_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PhotoImageUrl" Type="nvarchar(max)" />
+    <Property Name="Title" Type="nvarchar(max)" />
+    <Property Name="Username" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="ProjectsModelStoreContainer">
+    <EntitySet Name="PhotoAlbumDB" EntityType="Self.PhotoAlbumDB" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

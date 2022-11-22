@@ -1,0 +1,386 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.navbar-bg {
+  background-color: transparent;
+}
+
+.navbar-bg::before {
+  background: none !important;
+}
+
+#JoinNow {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 10000;
+  background-color: white;
+}
+
+.IntroImage {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.IntroImage span {
+  font-size: 150pt;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.IntroTitle {
+  font-size: 25pt;
+  margin-top: 20%;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.IntroImage img {
+  width: 100%;
+}
+
+.IntroLoginBtn {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.IntroCopyright {
+  position: fixed;
+  bottom: 25px;
+  left: 0px;
+  right: 0px;
+  text-align: center;
+  font-size: 9pt;
+  color: gray;
+}
+
+.IntroSignupBtn {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.MainPageImage {
+  width: 100%;
+}
+
+.MainBTNHoldersBox {
+  height: 270px;
+  position: relative;
+  top: -50px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.MainBTNHolderRows {
+  position: relative;
+  height: 50%;
+  width: 100%;
+  display: flex;
+}
+
+.MainBtnHolders {
+  width: 50%;
+  height: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.MainBtn {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-align: center;
+  display: block !important;
+  line-height: 25px;
+}
+
+.MainBtn .material-icons {
+  font-size: 35pt;
+  margin-top: 16px;
+}
+
+.MenuItems ul {
+  list-style: none;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.MenuItems ul li {
+  width: 100%;
+  display: block !important;
+}
+
+.MenuItems ul li a {
+  color: dimgray;
+  padding: 15px;
+  border-bottom: solid 1px lightgrey;
+  display: block;
+}
+
+.MainMenuLogo {
+  height: 200px;
+  position: relative;
+}
+
+.MainMenuLogo span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30pt;
+  color: black;
+  font-weight: bold;
+}
+
+.CenterScreen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.CenterScreen .material-icons {
+  color: mediumseagreen;
+  font-size: 100pt;
+}
+
+.ActivateScreen {
+  display: block;
+  margin-top: 25px;
+  font-size: 25px;
+}
+
+.LoginIcon {
+  text-align: center;
+  color: black;
+}
+
+.LoginIcon .material-icons {
+  font-size: 100pt;
+  margin-top: 55px;
+}
+
+body {
+  background-color: gray;
+}
+
+#root {
+  width: 380px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 0px 10px 1px rgb(0 0 0 / 30%);
+}
+
+.page-content {
+  background-color: #e6f2fd;
+}
+
+.navbar {
+  background-color: white;
+}
+
+.list ul {
+  background-color: transparent !important;
+}
+
+.item-input-wrap {
+  background-color: white;
+}
+
+.TaskStatus {
+  margin-left: 15px;
+  margin-right: 15px;
+  background-color: white;
+}
+
+.search-list .item-title {
+  display: none;
+}
+
+.card {
+  width: 100%;
+}
+
+.ImageUploader {
+  margin: 17px;
+  padding-top: 70%;
+  border: solid 1px lightgrey;
+  border-radius: 6px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: gray;
+  position: relative;
+}
+
+.ImageUploader input {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.list .NoRightPadding {
+  padding-right: 0px !important;
+}
+
+.PhotoAlbum {
+  width: 100%;
+}
+
+
+
+* {
+  box-sizing: border-box
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+.SearchInputBox {
+  background-color: white;
+  padding: 13px;
+  position: absolute;
+  width: 100%;
+}
